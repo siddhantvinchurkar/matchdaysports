@@ -1,0 +1,52 @@
+[debug] [2018-05-31T06:22:20.912Z] ----------------------------------------------------------------------
+[debug] [2018-05-31T06:22:20.916Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-05-31T06:22:20.916Z] CLI Version:   3.18.4
+[debug] [2018-05-31T06:22:20.916Z] Platform:      linux
+[debug] [2018-05-31T06:22:20.916Z] Node Version:  v9.6.1
+[debug] [2018-05-31T06:22:20.916Z] Time:          Thu May 31 2018 11:52:20 GMT+0530 (IST)
+[debug] [2018-05-31T06:22:20.916Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-31T06:22:20.928Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-31T06:22:20.929Z] > authorizing via signed-in user
+[debug] [2018-05-31T06:22:20.932Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/matchday-sports  
+  
+ Thu May 31 2018 11:52:20 GMT+0530 (IST)
+[debug] [2018-05-31T06:22:22.776Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-31T06:22:22.777Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/matchday-sports/tokens  
+  
+ Thu May 31 2018 11:52:22 GMT+0530 (IST)
+[debug] [2018-05-31T06:22:23.999Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'matchday-sports'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing / directory for upload...
+[debug] [2018-05-31T06:22:28.428Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/matchday-sports/uploads/-LDor8PsfecugNnOcZST?fileCount=204&message=  
+  
+ Thu May 31 2018 11:52:28 GMT+0530 (IST)
+[debug] [2018-05-31T06:26:04.012Z] ----------------------------------------------------------------------
+[debug] [2018-05-31T06:26:04.017Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-05-31T06:26:04.017Z] CLI Version:   3.18.4
+[debug] [2018-05-31T06:26:04.017Z] Platform:      linux
+[debug] [2018-05-31T06:26:04.018Z] Node Version:  v9.6.1
+[debug] [2018-05-31T06:26:04.018Z] Time:          Thu May 31 2018 11:56:04 GMT+0530 (IST)
+[debug] [2018-05-31T06:26:04.018Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-31T06:26:04.030Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-31T06:26:04.030Z] > authorizing via signed-in user
+[debug] [2018-05-31T06:26:04.033Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/matchday-sports  
+  
+ Thu May 31 2018 11:56:04 GMT+0530 (IST)
+[debug] [2018-05-31T06:26:05.777Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-31T06:26:05.778Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/matchday-sports/tokens  
+  
+ Thu May 31 2018 11:56:05 GMT+0530 (IST)
+[debug] [2018-05-31T06:26:07.001Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'matchday-sports'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing / directory for upload...
+[debug] [2018-05-31T06:26:11.918Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/matchday-sports/uploads/-LDorzwTLw3ptpBE-Gql?fileCount=204&message=  
+  
+ Thu May 31 2018 11:56:11 GMT+0530 (IST)

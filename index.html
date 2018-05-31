@@ -6,9 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Solid State by HTML5 UP</title>
+		<title>Matchday Sports</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -18,7 +19,7 @@
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
-
+<!--#4c5c96-->
 				<!-- Header -->
 					<header id="header" class="alt">
 						<h1><a href="index.html">Solid State</a></h1>
@@ -45,9 +46,10 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<div class="logo"><span class="icon fa-diamond"style="display:none;"></span><img src="images/mdslogo.png" height="40%" width="40%" /></div>
+							<div><span class="icon fa-diamond"style="display:none;"></span><img src="images/mdslogo.png" height="60%" width="60%" /></div>
 							<!--<h2>Matchday Sports</h2>-->
-							<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+							<!--<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>-->
+							<div class="logo" id="scrolldown"><span class="icon fa-arrow-down" style="margin-top:4em; margin-left:2em; color:#419571; font-size:1.7em; cursor: pointer;"></span></div>
 						</div>
 					</section>
 
@@ -61,7 +63,7 @@
 									<div class="content">
 										<h2 class="major">Magna arcu feugiat</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<a id="lm1" href="#" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -73,7 +75,7 @@
 									<div class="content">
 										<h2 class="major">Tempus adipiscing</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<a id="lm2" href="#" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -85,7 +87,7 @@
 									<div class="content">
 										<h2 class="major">Nullam dignissim</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<a id="lm3" href="#" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -122,7 +124,7 @@
 										</article>
 									</section>
 									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
+										<li><a id="git" href="#" class="button">Get In Touch</a></li>
 									</ul>
 								</div>
 							</section>
@@ -178,6 +180,34 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+<script>
+$("#scrolldown").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#one").offset().top
+    }, 2000);
+});
+$("#lm1").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#two").offset().top
+    }, 2000);
+});
+$("#lm2").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#three").offset().top
+    }, 2000);
+});
+$("#lm3").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#four").offset().top
+    }, 2000);
+});
+$("#git").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#footer").offset().top
+    }, 2000);
+});
+</script>
 
 	</body>
 </html>
