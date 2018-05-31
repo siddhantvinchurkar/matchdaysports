@@ -22,7 +22,7 @@
 <!--#4c5c96-->
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Matchday Sports</a></h1>
+						<h1><a href="index.html"><img src="images/whitelogo.png" width="15%" height="15%" style="margin-top:1em;" /></a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -33,11 +33,9 @@
 						<div class="inner">
 							<h2>Menu</h2>
 							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
+								<li><a id="menuhome" href="#">Home</a></li>
+								<li><a id="menuau" href="#">About Us</a></li>
+								<li><a id="menugit" href="#">Get In Touch</a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -49,7 +47,7 @@
 							<div><span class="icon fa-diamond"style="display:none;"></span><img src="images/mdslogo.png" height="60%" width="60%" /></div>
 							<!--<h2>Matchday Sports</h2>-->
 							<!--<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>-->
-							<div class="logo" id="scrolldown"><span class="icon fa-arrow-down" style="margin-top:4em; margin-left:2em; color:#419571; font-size:1.7em; cursor: pointer;"></span></div>
+							<div class="logo" id="scrolldown"><span class="icon fa-arrow-down" style="margin-top:4em; margin-left:2em; font-size:1.7em; cursor: pointer;"></span></div>
 						</div>
 					</section>
 
@@ -95,7 +93,7 @@
 						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
-									<h2 class="major">Facilities</h2>
+									<h2 class="major">Facilities @ Matchday</h2>
 									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 									<section class="features">
 										<article>
@@ -203,6 +201,21 @@ $("#lm3").click(function() {
     }, 2000);
 });
 $("#git").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#footer").offset().top
+    }, 2000);
+});
+$("#menuhome").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#page-wrapper").offset().top
+    }, 2000);
+});
+$("#menuau").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#one").offset().top
+    }, 2000);
+});
+$("#menugit").click(function() {
     $('html, body').animate({
         scrollTop: $("#footer").offset().top
     }, 2000);
