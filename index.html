@@ -13,7 +13,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body>
+	<body onresize="resized();">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -94,7 +94,7 @@
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Facilities @ Matchday</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<p id="rtxt">Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 <iframe id="caraousel1" src="caraousel.html" height="600" width="1000"></iframe>
 										<div style="margin-top:2em;"></div>
 									<a id="git" href="#" class="special">Get in touch</a>
@@ -213,6 +213,15 @@ function tournaments(json) {
 	}
   }
 
+</script>
+
+<script>
+function resized() {
+    var w = window.outerWidth;
+    var h = window.outerHeight;
+    var txt = "Window size: width=" + w + ", height=" + h;
+    document.getElementById("rtxt").innerHTML = txt;
+}
 </script>
 
 <script src="https://spreadsheets.google.com/feeds/cells/1G96oCE07QBVf9T6BozrmQR20xhtbtmymnpUiv8Q_jjY/1/public/values?alt=json-in-script&callback=tournaments"></script>
