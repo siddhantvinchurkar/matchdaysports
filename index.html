@@ -31,11 +31,11 @@
 						<div class="inner">
 							<!--<h2>Menu</h2>-->
 							<ul class="links">
-								<li><a id="menuhome" href="#"><b>Home</b></a></li>
-								<li><a id="menuau" href="#"><b>About Us</b></a></li>
-								<li><a id="menutmt" href="#"><b>Tournaments</b></a></li>
-								<li><a id="menugal" href="#"><b>Gallery</b></a></li>
-								<li><a id="menugit" href="#"><b>Get In Touch</b></a></li>
+								<li><a id="menuhome" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">Home</b></a></li>
+								<li><a id="menuau" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">About Us</b></a></li>
+								<li><a id="menutmt" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">Tournaments</b></a></li>
+								<li><a id="menugal" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">Gallery</b></a></li>
+								<li><a id="menugit" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">Get In Touch</b></a></li>
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
@@ -47,7 +47,7 @@
 							<div><span class="icon fa-diamond"style="display:none;"></span><img src="images/mdslogo.png" height="60%" width="60%" /></div>
 							<!--<h2>Matchday Sports</h2>-->
 							<!--<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>-->
-							<div class="logo" id="scrolldown"><span class="icon fa-arrow-down" style="margin-top:4em; margin-left:2em; font-size:1.7em; cursor: pointer;"></span></div>
+							<div class="logo" id="scrolldown" style="display:none;"><span class="icon fa-arrow-down" style="margin-top:4em; margin-left:2em; font-size:1.7em; cursor: pointer;"></span></div>
 						</div>
 					</section>
 
@@ -56,12 +56,12 @@
 
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1" style="color:#00C997;">
-								<div class="inner">
+								<div class="inner" style="color:#000000;">
 									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major" style="color:#00C997; border-bottom-color:#00C997;">What is matchday?</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a id="lm1" href="#" class="special" style="color:#05AA7B" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Why matchday?</a>
+										<a id="lm1" href="#" class="special" style="color:#00c997; display:none;" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Why matchday?</a>
 									</div>
 								</div>
 							</section>
@@ -73,7 +73,7 @@
 									<div class="content">
 										<h2 class="major">Why matchday?</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a id="lm2" href="#" class="special">Tournaments @ Matchday</a>
+										<a id="lm2" href="#" class="special" style="color:#00c997; display:none;" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Tournaments @ Matchday</a>
 									</div>
 								</div>
 							</section>
@@ -84,8 +84,8 @@
 									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major" style="color:#00C997; border-bottom-color:#00C997;">Tournaments @ Matchday</h2>
-										<div id = "biscotti"></div>
-										<a id="lm3" href="#" class="special" style="color:#05AA7B" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Image Gallery</a>
+										<div id = "biscotti" style="color:#000000"></div>
+										<a id="lm3" href="#" class="special" style="color:#00c997; display:none;" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Image Gallery</a>
 									</div>
 								</div>
 							</section>
@@ -93,11 +93,11 @@
 						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
-									<h2 class="major">Facilities @ Matchday</h2>
+									<h2 class="major">Image Gallery</h2>
 									<p id="rtxt">Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 <iframe id="caraousel1" src="caraousel.html" height="600" width="1000"></iframe>
 										<div style="margin-top:2em;"></div>
-									<a id="git" href="#" class="special">Get in touch</a>
+									<a id="git" href="#" class="special" style="display:none;">Get in touch</a>
 								</div>
 							</section>
 
@@ -220,7 +220,7 @@ function resized() {
     var w = window.outerWidth;
     var h = window.outerHeight;
     var txt = "Window size: width=" + w + ", height=" + h;
-    document.getElementById("rtxt").innerHTML = txt;
+    //document.getElementById("rtxt").innerHTML = txt;
 }
 </script>
 
