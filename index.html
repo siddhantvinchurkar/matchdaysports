@@ -55,13 +55,13 @@
 					<section id="wrapper">
 
 						<!-- One -->
-							<section id="one" class="wrapper spotlight style1" style="color:#00C997;">
+							<section id="one" class="wrapper spotlight style1" style="color:#386555;">
 								<div class="inner" style="color:#000000;">
 									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major" style="color:#00C997; border-bottom-color:#00C997;">What is matchday?</h2>
+										<h2 class="major" style="color:#386555; border-bottom-color:#386555;">What is matchday?</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a id="lm1" href="#" class="special" style="color:#00c997; display:none;" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Why matchday?</a>
+										<a id="lm1" href="#" class="special" style="color:#386555; display:none;" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Why matchday?</a>
 									</div>
 								</div>
 							</section>
@@ -73,19 +73,19 @@
 									<div class="content">
 										<h2 class="major">Why matchday?</h2>
 										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a id="lm2" href="#" class="special" style="color:#00c997; display:none;" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Tournaments @ Matchday</a>
+										<a id="lm2" href="#" class="special" style="color:#386555; display:none;" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Tournaments @ Matchday</a>
 									</div>
 								</div>
 							</section>
 
 						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3" style="color:#00C997;">
+							<section id="three" class="wrapper spotlight style3" style="color:#386555;">
 								<div class="inner">
 									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major" style="color:#00C997; border-bottom-color:#00C997;">Tournaments @ Matchday</h2>
+										<h2 class="major" style="color:#386555; border-bottom-color:#386555;">Tournaments @ Matchday</h2>
 										<div id = "biscotti" style="color:#000000"></div>
-										<a id="lm3" href="#" class="special" style="color:#00c997; display:none;" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Image Gallery</a>
+										<a id="lm3" href="#" class="special" style="color:#386555; display:none;" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Image Gallery</a>
 									</div>
 								</div>
 							</section>
@@ -95,7 +95,7 @@
 								<div class="inner">
 									<h2 class="major">Image Gallery</h2>
 									<p id="rtxt">Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-<iframe id="caraousel1" src="caraousel.html" height="600" width="1000"></iframe>
+<iframe id="caraousel1" src="caraousel.html" height="600" width="900"></iframe>
 										<div style="margin-top:2em;"></div>
 									<a id="git" href="#" class="special" style="display:none;">Get in touch</a>
 								</div>
@@ -221,15 +221,25 @@ window.onresize = function(event) {
     var h = window.outerHeight;
     var txt = "Window size: width=" + w + ", height=" + h;
     //document.getElementById("rtxt").innerHTML = txt;
-    if(w<720 && h<1280){
+    if(w<360 && h<650){
+	console.log(txt + "<360 onresize");
+        document.getElementById("caraousel1").height = "180";
+	document.getElementById("caraousel1").width = "270";
+    }
+    else if(w<720 && h<1280){
 	console.log(txt + "<720 onresize");
         document.getElementById("caraousel1").height = "200";
 	document.getElementById("caraousel1").width = "310";
     }
+    else if(w<770 && h<1050){
+	console.log(txt + "<770 onresize");
+        document.getElementById("caraousel1").height = "300";
+	document.getElementById("caraousel1").width = "500";
+    }
     else{
 	console.log(txt + ">=720 onresize");
         document.getElementById("caraousel1").height = "600";
-	document.getElementById("caraousel1").width = "1000";
+	document.getElementById("caraousel1").width = "900";
     }
 };
 
@@ -238,10 +248,20 @@ window.onload = function(){
     var h = window.outerHeight;
     var txt = "Window size: width=" + w + ", height=" + h;
     //document.getElementById("rtxt").innerHTML = txt;
-    if(w<720 && h<1280){
-	console.log(txt + ">=720 onload");
+    if(w<360 && h<650){
+	console.log(txt + ">360 onload");
+        document.getElementById("caraousel1").height = "180";
+	document.getElementById("caraousel1").width = "270";
+    }
+    else if(w<720 && h<1280){
+	console.log(txt + "<=720 onload");
         document.getElementById("caraousel1").height = "200";
 	document.getElementById("caraousel1").width = "310";
+    }
+    else if(w<770 && h<1050){
+	console.log(txt + "<770 onload");
+        document.getElementById("caraousel1").height = "300";
+	document.getElementById("caraousel1").width = "500";
     }
 };
 </script>
