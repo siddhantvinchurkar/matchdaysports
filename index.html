@@ -13,7 +13,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body onresize="resized();">
+	<body>
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -216,12 +216,34 @@ function tournaments(json) {
 </script>
 
 <script>
-function resized() {
+window.onresize = function(event) {
     var w = window.outerWidth;
     var h = window.outerHeight;
     var txt = "Window size: width=" + w + ", height=" + h;
     //document.getElementById("rtxt").innerHTML = txt;
-}
+    if(w<720 && h<1280){
+	console.log(txt + "<720 onresize");
+        document.getElementById("caraousel1").height = "200";
+	document.getElementById("caraousel1").width = "310";
+    }
+    else{
+	console.log(txt + ">=720 onresize");
+        document.getElementById("caraousel1").height = "600";
+	document.getElementById("caraousel1").width = "1000";
+    }
+};
+
+window.onload = function(){
+    var w = window.outerWidth;
+    var h = window.outerHeight;
+    var txt = "Window size: width=" + w + ", height=" + h;
+    //document.getElementById("rtxt").innerHTML = txt;
+    if(w<720 && h<1280){
+	console.log(txt + ">=720 onload");
+        document.getElementById("caraousel1").height = "200";
+	document.getElementById("caraousel1").width = "310";
+    }
+};
 </script>
 
 <script src="https://spreadsheets.google.com/feeds/cells/1G96oCE07QBVf9T6BozrmQR20xhtbtmymnpUiv8Q_jjY/1/public/values?alt=json-in-script&callback=tournaments"></script>

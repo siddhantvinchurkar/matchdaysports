@@ -5,7 +5,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
-	<body>
+	<body onresize="responsive();">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -17,16 +17,16 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="images/pic04.jpg" alt="Unable to load image" style="width:1000px; height:600px;">
+					<img id="img1" src="images/pic04.jpg" alt="Unable to load image" style="width:1000px; height:600px;">
 				</div>
 				<div class="item">
-					<img src="images/pic05.jpg" alt="Unable to load image" style="width:1000px; height:600px;">
+					<img id="img2" src="images/pic05.jpg" alt="Unable to load image" style="width:1000px; height:600px;">
 				</div>
 				<div class="item">
-					<img src="images/pic06.jpg" alt="Unable to load image" style="width:1000px; height:600px;">
+					<img id="img3" src="images/pic06.jpg" alt="Unable to load image" style="width:1000px; height:600px;">
 				</div>
 				<div class="item">
-					<img src="images/pic07.jpg" alt="Unable to load image" style="width:1000px; height:600px;">
+					<img id="img4" src="images/pic07.jpg" alt="Unable to load image" style="width:1000px; height:600px;">
 				</div>
 			</div>
 			<!-- Left and right controls -->
@@ -40,4 +40,26 @@
 			</a>
 		</div>
 	</body>
+
+<script>
+	function responsive(){
+		document.getElementById("img1").style = "width:" + window.outerWidth + "; height:" + window.outerHeight + ";";
+		document.getElementById("img2").style = "width:" + window.outerWidth + "; height:" + window.outerHeight + ";";
+		document.getElementById("img3").style = "width:" + window.outerWidth + "; height:" + window.outerHeight + ";";
+		document.getElementById("img4").style = "width:" + window.outerWidth + "; height:" + window.outerHeight + ";";
+		if(window.outerWidth<720 && window.outerHeight<1280){
+			document.getElementById("img1").src = "images/simg1.jpg";
+			document.getElementById("img2").src = "images/pic07.jpg";
+			document.getElementById("img3").src = "images/simg3.jpg";
+			document.getElementById("img4").src = "images/simg4.jpg";
+		}
+		else{
+			document.getElementById("img1").src = "images/pic04.jpg";
+			document.getElementById("img2").src = "images/pic05.jpg";
+			document.getElementById("img3").src = "images/pic06.jpg";
+			document.getElementById("img4").src = "images/pic07.jpg";
+		}
+	}
+</script>
+
 </html>
