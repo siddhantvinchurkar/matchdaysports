@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <!--
 	Built by Siddhant Vinchurkar and Kehaan Saaraiya
+	© 2018 Volatile, Inc. (https://volatile.ga/) and Blue Matchbox (http://bluematchbox.com/)
 -->
 <html>
 	<head>
@@ -34,6 +35,7 @@
 								<li><a id="menuhome" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">Home</b></a></li>
 								<li><a id="menuau" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">About Us</b></a></li>
 								<li><a id="menutmt" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">Tournaments</b></a></li>
+								<li><a id="menu6" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">Academies</b></a></li>
 								<li><a id="menugal" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">Gallery</b></a></li>
 								<li><a id="menugit" href="#"><b onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">Get In Touch</b></a></li>
 							</ul>
@@ -91,6 +93,32 @@
 							</section>
 
 						<!-- Four -->
+							<section id="five" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Academies</h2>
+										<p>We have tied up with various world class academies to bring quality coaching to North Bengaluru.</p>
+										<a id="lm4" href="#" class="special" style="color:#ffffff;" onmouseover="this.style.color='#E0E0E0';" onmouseout="this.style.color='#FFFFFF';">See all academies</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Five -->
+							<section id="six" class="wrapper spotlight style3" style="color:#386555;">
+								<div class="inner">
+									<a href="#" class="image"><img src="http://via.placeholder.com/256x256/048862/ffffff?text=3" alt="" /></a>
+									<a href="#" class="image"><img src="http://via.placeholder.com/256x256/037656/ffffff?text=2" alt="" /></a>
+									<a href="#" class="image"><img src="http://via.placeholder.com/256x256/036649/ffffff?text=1" alt="" /></a>
+									<div class="content">
+										<h2 class="major" style="color:#386555; border-bottom-color:#386555;">Academy logos / contact information go here</h2>
+										<div id = "notbiscotti" style="color:#000000">Informational content about the contact details of the aforementioned academies</div>
+										<a id="lm3" href="#" class="special" style="color:#386555; display:none;" onmouseover="this.style.background='#E0E0E0';" onmouseout="this.style.background='#FFFFFF';">Image Gallery</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Six -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Image Gallery</h2>
@@ -137,7 +165,7 @@
 								<!--<li class="fa-envelope"><a href="#">information@matchdaysports.com</a></li>-->
 							</ul>
 							<ul class="copyright">
-								<li>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://volatile.ga">Volatile, Inc.</a> Made with love for Matchday Sports</li>
+								<li>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://volatile.ga">Volatile, Inc.</a> and <a href="http://bluematchbox.com/">Blue Matchbox</a>. Made with love for Matchday Sports</li>
 							</ul>
 						</div>
 					</section>
@@ -202,6 +230,16 @@ $("#menutmt").click(function() {
 $("#menugal").click(function() {
     $('html, body').animate({
         scrollTop: $("#caraousel1").offset().top
+    }, 2000);
+});
+$("#lm4").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#six").offset().top
+    }, 2000);
+});
+$("#menu6").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#five").offset().top
     }, 2000);
 });
 
