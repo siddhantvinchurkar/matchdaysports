@@ -159,7 +159,8 @@
 									Matchday Sports<br />
 									No. 47, Opposite Paradise Biriyani, <br />NEW Road, AG's layout, <br />Bengaluru, Karnataka 560094
 								</li>-->
-								<li class="fa-location-arrow"> 
+								<center id="centerLocationIcon" style="display:none;"><li class="fa fa-location-arrow"></li></center>
+								<li id="leftLocationIcon" class="fa-location-arrow"> 
 								<iframe id="gmaps" style="border-radius: 10px; width: 400px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15547.801385584278!2d77.5643074!3d13.0388326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f61f42620b6649f!2sMatchday!5e0!3m2!1sen!2sin!4v1529407046876" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 								</li>
 								<li class="fa-phone"><a href="tel:+919591997799" title="Click to place call!">(+91) 95919 97799</a></li>
@@ -269,6 +270,8 @@ document.getElementById("caraousel1").contentWindow.location.reload();
 	document.getElementById("imageSwitcher").style.display = "block";
         document.getElementById("imageSwitcher").height = "180";
 	document.getElementById("imageSwitcher").width = "270";
+	document,getElementById("centerLocationIcon").style.display = "block";
+	document,getElementById("leftLocationIcon").classList.remove("fa-location-arrow");
         document.getElementById("gmaps").width = "250";
         document.getElementById("gmaps").height = "250";
         document.getElementById("gmaps").style = "border-radius: 10px; width: 250px; height:250px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
@@ -283,6 +286,8 @@ document.getElementById("caraousel1").contentWindow.location.reload();
 	document.getElementById("imageSwitcher").width = "310";
         document.getElementById("gmaps").width = "250";
         document.getElementById("gmaps").height = "300";
+	document.getElementById("centerLocationIcon").style.display = "block";
+	document.getElementById("leftLocationIcon").classList.remove("fa-location-arrow");
         document.getElementById("gmaps").style = "border-radius: 10px; width: 280px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
     }
     else if(w<770 && h<1050){
@@ -295,6 +300,8 @@ document.getElementById("caraousel1").contentWindow.location.reload();
 	document.getElementById("imageSwitcher").width = "500";
         document.getElementById("gmaps").width = "400";
         document.getElementById("gmaps").height = "300";
+	document.getElementById("centerLocationIcon").style.display = "block";
+	document.getElementById("leftLocationIcon").classList.remove("fa-location-arrow");
         document.getElementById("gmaps").style = "border-radius: 10px; width: 400px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
     }
     else{
@@ -305,6 +312,8 @@ document.getElementById("caraousel1").contentWindow.location.reload();
 	document.getElementById("imageSwitcher").style.display = "none";
         document.getElementById("gmaps").width = "400";
         document.getElementById("gmaps").height = "300";
+	document.getElementById("centerLocationIcon").style.display = "none";
+	document.getElementById("leftLocationIcon").classList.add("fa-location-arrow");
         document.getElementById("gmaps").style = "border-radius: 10px; width: 400px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
     }
 };
@@ -324,6 +333,8 @@ window.onload = function(){
 	document.getElementById("imageSwitcher").width = "270";
         document.getElementById("gmaps").width = "250";
         document.getElementById("gmaps").height = "250";
+	document.getElementById("centerLocationIcon").style.display = "block";
+	document.getElementById("leftLocationIcon").classList.remove("fa-location-arrow");
         document.getElementById("gmaps").style = "border-radius: 10px; width: 250px; height:250px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
     }
     else if(w<720 && h<1280){
@@ -336,6 +347,8 @@ window.onload = function(){
 	document.getElementById("imageSwitcher").width = "310";
         document.getElementById("gmaps").width = "250";
         document.getElementById("gmaps").height = "300";
+	document.getElementById("centerLocationIcon").style.display = "block";
+	document.getElementById("leftLocationIcon").classList.remove("fa-location-arrow");
         document.getElementById("gmaps").style = "border-radius: 10px; width: 280px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
     }
     else if(w<770 && h<1050){
@@ -348,6 +361,8 @@ window.onload = function(){
 	document.getElementById("imageSwitcher").width = "500";
         document.getElementById("gmaps").width = "400";
         document.getElementById("gmaps").height = "300";
+	document.getElementById("centerLocationIcon").style.display = "block";
+	document.getElementById("leftLocationIcon").classList.remove("fa-location-arrow");
         document.getElementById("gmaps").style = "border-radius: 10px; width: 400px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
     }
 
