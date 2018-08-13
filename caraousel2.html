@@ -19,6 +19,9 @@
 
 		window.onresize = function(){
 			responsive();
+			var elems = document.querySelectorAll('.carousel');
+			var instances = M.Carousel.init(elems, {fullwidth: true});
+			window.location.reload();
 		}
 
 		document.addEventListener('DOMContentLoaded', function() {
