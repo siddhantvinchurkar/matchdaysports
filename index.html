@@ -350,6 +350,20 @@ window.onload = function(){
         document.getElementById("gmaps").height = "300";
         document.getElementById("gmaps").style = "border-radius: 10px; width: 400px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
     }
+
+    // Cycle through images -->
+    var i =0;
+    var imgArray = ["images/simg1.jpg", "images/pic07.jpg", "images/simg3.jpg","images/simg4.jpg"];
+    document.getElementById("imageSwitcher").onclick = function(){
+	if(i === 3) i=0;
+	else i++;
+	document.getElementById("imageSwitcher").src = imgArray[i];
+    }
+
+    for(i=0; i<=3; i++){
+	setTimeout(function(){document.getElementById("imageSwitcher").src = imgArray[i];}, 2000);
+    }
+
 };
 </script>
 
