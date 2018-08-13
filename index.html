@@ -123,7 +123,8 @@
 								<div class="inner">
 									<h2 class="major">Image Gallery</h2>
 									<p id="rtxt"></p>
-										<iframe id="caraousel2" src="caraousel2.html" height="600" width="900"></iframe>
+										<iframe id="caraousel1" src="caraousel2.html" height="600" width="900"></iframe>
+										<img id="imageSwitcher" src="images/simg1.jpg" style="display:none;" />
 										<div style="margin-top:2em;"></div>
 									<a id="git" href="#" class="special" style="display:none;">Get in touch</a>
 								</div>
@@ -264,6 +265,8 @@ document.getElementById("caraousel1").contentWindow.location.reload();
 	console.log(txt + "<360 onresize");
         document.getElementById("caraousel1").height = "180";
 	document.getElementById("caraousel1").width = "270";
+	document.getElementById("caraousel1").style.display = "none";
+	document.getElementById("imageSwitcher").style.display = "block";
         document.getElementById("gmaps").width = "250";
         document.getElementById("gmaps").height = "250";
         document.getElementById("gmaps").style = "border-radius: 10px; width: 250px; height:250px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
@@ -272,6 +275,8 @@ document.getElementById("caraousel1").contentWindow.location.reload();
 	console.log(txt + "<720 onresize");
         document.getElementById("caraousel1").height = "200";
 	document.getElementById("caraousel1").width = "310";
+	document.getElementById("caraousel1").style.display = "none";
+	document.getElementById("imageSwitcher").style.display = "block";
         document.getElementById("gmaps").width = "250";
         document.getElementById("gmaps").height = "300";
         document.getElementById("gmaps").style = "border-radius: 10px; width: 280px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
@@ -280,6 +285,8 @@ document.getElementById("caraousel1").contentWindow.location.reload();
 	console.log(txt + "<770 onresize");
         document.getElementById("caraousel1").height = "300";
 	document.getElementById("caraousel1").width = "500";
+	document.getElementById("caraousel1").style.display = "none";
+	document.getElementById("imageSwitcher").style.display = "block";
         document.getElementById("gmaps").width = "400";
         document.getElementById("gmaps").height = "300";
         document.getElementById("gmaps").style = "border-radius: 10px; width: 400px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
@@ -288,6 +295,8 @@ document.getElementById("caraousel1").contentWindow.location.reload();
 	console.log(txt + ">=720 onresize");
         document.getElementById("caraousel1").height = "600";
 	document.getElementById("caraousel1").width = "900";
+	document.getElementById("caraousel1").style.display = "block";
+	document.getElementById("imageSwitcher").style.display = "none";
         document.getElementById("gmaps").width = "400";
         document.getElementById("gmaps").height = "300";
         document.getElementById("gmaps").style = "border-radius: 10px; width: 400px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
@@ -303,6 +312,8 @@ window.onload = function(){
 	console.log(txt + ">360 onload");
         document.getElementById("caraousel1").height = "180";
 	document.getElementById("caraousel1").width = "270";
+	document.getElementById("caraousel1").style.display = "none";
+	document.getElementById("imageSwitcher").style.display = "block";
         document.getElementById("gmaps").width = "250";
         document.getElementById("gmaps").height = "250";
         document.getElementById("gmaps").style = "border-radius: 10px; width: 250px; height:250px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
@@ -311,6 +322,8 @@ window.onload = function(){
 	console.log(txt + "<=720 onload");
         document.getElementById("caraousel1").height = "200";
 	document.getElementById("caraousel1").width = "310";
+	document.getElementById("caraousel1").style.display = "none";
+	document.getElementById("imageSwitcher").style.display = "block";
         document.getElementById("gmaps").width = "250";
         document.getElementById("gmaps").height = "300";
         document.getElementById("gmaps").style = "border-radius: 10px; width: 280px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
@@ -319,6 +332,8 @@ window.onload = function(){
 	console.log(txt + "<770 onload");
         document.getElementById("caraousel1").height = "300";
 	document.getElementById("caraousel1").width = "500";
+	document.getElementById("caraousel1").style.display = "none";
+	document.getElementById("imageSwitcher").style.display = "block";
         document.getElementById("gmaps").width = "400";
         document.getElementById("gmaps").height = "300";
         document.getElementById("gmaps").style = "border-radius: 10px; width: 400px; height:300px; overflow: hidden; box-shadow: 1px 1px 1px #888888;";
