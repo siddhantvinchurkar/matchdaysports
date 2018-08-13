@@ -9,13 +9,18 @@
 	</head>
 	<body>
 		<div id="carousel" class="carousel carousel-slider" style="min-height:600px;">
-			<a class="carousel-item" href="#one!"><img src="images/pic04.jpg"></a>
-			<a class="carousel-item" href="#two!"><img src="images/pic05.jpg"></a>
-			<a class="carousel-item" href="#three!"><img src="images/pic06.jpg"></a>
-			<a class="carousel-item" href="#four!"><img src="images/pic07.jpg"></a>
+			<a id="img1" class="carousel-item" href="#one!"><img src="images/pic04.jpg"></a>
+			<a id="img2" class="carousel-item" href="#two!"><img src="images/pic05.jpg"></a>
+			<a id="img3" class="carousel-item" href="#three!"><img src="images/pic06.jpg"></a>
+			<a id="img4" class="carousel-item" href="#four!"><img src="images/pic07.jpg"></a>
 		</div>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 	<script type="text/javascript">
+
+		window.onresize = function(){
+			responsive();
+		}
+
 		document.addEventListener('DOMContentLoaded', function() {
 			var elems = document.querySelectorAll('.carousel');
 			var instances = M.Carousel.init(elems, {fullwidth: true});
