@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Matchday Sports</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+	</head>
+	<body>
+		<div id="carousel" class="carousel carousel-slider" style="min-height:600px;">
+			<a class="carousel-item" href="#one!"><img src="images/pic04.jpg"></a>
+			<a class="carousel-item" href="#two!"><img src="images/pic05.jpg"></a>
+			<a class="carousel-item" href="#three!"><img src="images/pic06.jpg"></a>
+			<a class="carousel-item" href="#four!"><img src="images/pic07.jpg"></a>
+		</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.carousel');
+			var instances = M.Carousel.init(elems, {fullwidth: true});
+		});
+		function responsive(){
+		document.getElementById("carousel").style = "min-height:" + window.outerHeight + ";";
+		console.log(window.outerHeight);
+		if(window.outerWidth<720 && window.outerHeight<1280){
+			document.getElementById("img1").src = "images/simg1.jpg";
+			document.getElementById("img2").src = "images/pic07.jpg";
+			document.getElementById("img3").src = "images/simg3.jpg";
+			document.getElementById("img4").src = "images/simg4.jpg";
+		}
+		else{
+			document.getElementById("img1").src = "images/pic04.jpg";
+			document.getElementById("img2").src = "images/pic05.jpg";
+			document.getElementById("img3").src = "images/pic06.jpg";
+			document.getElementById("img4").src = "images/pic07.jpg";
+		}
+	}
+	</script>
+	</body>
+</html>
