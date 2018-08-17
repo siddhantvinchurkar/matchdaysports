@@ -26,7 +26,8 @@
 
 		document.addEventListener('DOMContentLoaded', function() {
 			var elems = document.querySelectorAll('.carousel');
-			var instances = M.Carousel.init(elems, {fullwidth: true});
+			var instances = M.Carousel.init(elems, {fullwidth: true, indicators:true});
+			setInterval(function(){instances[0].next();}, 2000);
 		});
 		function responsive(){
 		document.getElementById("carousel").style = "min-height:" + window.outerHeight + ";";
